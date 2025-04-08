@@ -1,0 +1,206 @@
+/* Responsive Navigation Bar */
+@media (max-width: 768px) {
+  .main-nav {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 0;
+  }
+
+  .logo-container {
+    border-right: none;
+    border-bottom: 2px solid #262626;
+    width: 100%;
+    justify-content: center;
+    border-radius: 0;
+    padding: 10px 0;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-links li {
+    border-left: none;
+    border-top: 2px solid #262626;
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+  }
+
+  .nav-links li:last-child {
+    border-bottom: 2px solid #262626;
+  }
+}
+
+/* Responsive Banner Section */
+@media (max-width: 992px) {
+  .banner-container {
+    flex-direction: column;
+  }
+
+  .banner-box,
+  .banner-text {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .banner-text {
+    padding-left: 0;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .banner-box {
+    position: relative;
+  }
+
+  .banner-box img[alt="abstract-design"] {
+    max-width: 70%;
+  }
+}
+
+/* Responsive Statistics Section */
+@media (max-width: 768px) {
+  #status-container {
+    grid-template-columns: 1fr;
+  }
+
+  .status-box {
+    width: 100%;
+    margin: auto;
+    padding: 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Responsive Benefits Section */
+@media (max-width: 992px) {
+  .benefit-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .benefit-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .benefit-grid .card {
+    padding-top: 60px;
+  }
+
+  .benefit-grid .card-image-container {
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+/* Responsive Testimonials Section */
+@media (max-width: 992px) {
+  .testimonials-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  #testimonials .flex.flex-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  #testimonials .arrow-container {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .testimonials-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* Responsive Frequently Asked Questions Section */
+@media (max-width: 768px) {
+  .questions-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .question-card {
+    padding: 12px 15px;
+  }
+
+  .question-card .card-title {
+    font-size: 14px;
+  }
+
+  .question-card .card-text {
+    font-size: 14px;
+  }
+}
+
+/* Responsive Explore Section */
+@media (max-width: 768px) {
+  .explore-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .explore-grid .card-content {
+    padding: 30px 40px;
+  }
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+  #footer .row {
+    flex-direction: column;
+  }
+
+  #footer .col-4,
+  #footer .col-8 {
+    width: 100%;
+    max-width: 100%;
+    padding: 15px 0;
+  }
+
+  #footer .nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #footer .nav .col-3 {
+    width: 100%;
+    margin-bottom: 20px;
+    max-width: 100%;
+  }
+
+  #footer .policy-container {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  #footer .policy-container .policy-box {
+    border: none;
+    padding: 0;
+  }
+
+  #footer .social-container {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 576px) {
+  #footer {
+    padding: 20px;
+  }
+}
+
+/* Responsive Announcement Bar */
+@media (max-width: 576px) {
+  .announcement-bar p {
+    font-size: 0.9rem;
+  }
+}
